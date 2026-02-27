@@ -1,3 +1,8 @@
 # SIEM-and-Threat-Detection-Lab
 
-This project involved the design and implementation of a modular Security Operations Center (SOC) Lab using Splunk (SIEM) and Sysmon to provide deep visibility into endpoint activities. By integrating Kali Linux for external reconnaissance and Atomic Red Team for internal adversary emulation, I created a "closed-loop" environment to validate security controls. The lab focused on mapping simulated attacks to the MITRE ATT&CK® framework and developing custom SPL (Search Processing Language) detection logic to identify and alert on high-severity threats in real-time.
+This lab demonstrates end-to-end proficiency in threat detection and SOC analyst workflows. The core objective was to build a functional SIEM-based detection environment and validate it against real attack simulations. This involved:  
+
+Setting up a two-VM isolated network environment (Kali Linux and Windows 11 ARM) with Sysmon capturing deep host telemetry across all critical event categories.  
+Configuring Splunk Enterprise to ingest 6+ Windows log sources and deploying custom correlation rules mapped to the MITRE ATT&CK framework.  
+Simulating targeted attack chains (e.g., credential dumping, persistence via scheduled tasks, PowerShell execution) using Atomic Red Team to generate real security alerts.  
+Performing SOC triage by analyzing Splunk detections against raw Sysmon and Windows Event Log evidence, confirming True Positives and documenting findings in a formal Incident Report.
