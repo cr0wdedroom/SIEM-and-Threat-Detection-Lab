@@ -14,5 +14,6 @@ Phase 1: Environment Setup & Network Preparation
 Established a secure, isolated virtual network where the Kali Linux (Attacker) can interact with the Windows 11 (Victim/SIEM) host using static configurations to ensure reliable log indexing.  
 
 **Step1.1: VM IP Address Confirmation -**  
+To ensure both Kali and Windows VM were on the same subnet, I switched the Network Adapter Settings to Host-Only. Then executed command ifconfig on Kali and ipconfig on Windows to confirm the same.  
 <img src="screenshots/kali_ifconfig.png" width="600">
 <img src="screenshots/windows_ipconfig.png" width="600">
