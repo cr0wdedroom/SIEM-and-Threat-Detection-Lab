@@ -14,4 +14,5 @@ Phase 1: Environment Setup & Network Preparation
 Established a secure, isolated virtual network where the Kali Linux (Attacker) can interact with the Windows 11 (Victim/SIEM) host using static configurations to ensure reliable log indexing.  
 
 **Step1.1: VM IP Address Confirmation -**  
-yo
+<img src="screenshots/kali_ifconfig.png" width="600">
+<img src="screenshots/windows_ipconfig.png" width="600">
