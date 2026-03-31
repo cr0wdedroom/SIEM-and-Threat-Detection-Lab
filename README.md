@@ -18,3 +18,10 @@ To ensure both Kali and Windows VM were on the same subnet, I switched the Netwo
 
 <img src="screenshots/kali_ifconfig.png" width="600">
 <img src="screenshots/windows_ipconfig.png" width="600">
+<img src="screenshots/connectivity_windows.png" width="600">
+<img src="screenshots/connectivity_kali.png" width="600">
+<img src="screenshots/splunk_cloud.png" width="600">
+<img src="screenshots/uf_download.png" width="600">
+<img src="screenshots/uf_credentials.png" width="600">
+<img src="screenshots/linking_splunk_cloud_to_windows.png" width="600">
+
