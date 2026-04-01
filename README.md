@@ -25,16 +25,22 @@ To ensure both Kali and Windows VM were on the same subnet, I switched the Netwo
 <img src="screenshots/connectivity_windows.png" width="600">
 <img src="screenshots/connectivity_kali.png" width="600">
 
-**Step 1.3: Splunk Cloud SIEM Provisioning -**  
+**Step 1.3.1: Splunk Cloud SIEM Provisioning -**  
 Signed up for Splunk Cloud Free Trial and got an assigned cloud account with credentials on email.  
 
 <img src="screenshots/splunk_cloud.png" width="600">  
+
+**Step 1.3.2: Universal Forwarder for Windows -**  
 Downloaded Universal Forwarder (UF) on Windows VM that speaks its language (ARM).  
 
 <img src="screenshots/uf_download.png" width="600">  
+
+**Step 1.3.3: Credentials for Cloud-Windows connection -**  
 Downloaded Universal Forwarder Credentials so the Cloud knows to trust my Windows VM.  
 
 <img src="screenshots/uf_credentials.png" width="600">  
+
+**Step 1.3.4: Linking Windows to Splunk Cloud -**  
 Opened Powershell as Administrator in Windows and ran command `cd C:\Program Files\SplunkUniversalForwarder\bin` to navigate to the Splunk bin folder, then ran `.\splunk install app C:\Users\YourName\Desktop\splunkclouduf.spl`  to install the cloud credentials and finally `.\splunk restart` to restart the forwarder.  
 
 <img src="screenshots/linking_splunk_cloud_to_windows.png" width="600">  
