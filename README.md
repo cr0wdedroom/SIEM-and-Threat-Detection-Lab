@@ -26,7 +26,7 @@ By default, Windows 11 ARM blocks pings. So had to open a specific hole in firew
 <img src="screenshots/connectivity_kali.png" width="600">
 
 **Step 1.3.1: Splunk Cloud SIEM Provisioning -**  
-Signed up for Splunk Cloud Free Trial and got an assigned cloud account with credentials on email.  
+Signed up for Splunk Cloud Free Trial and got an assigned Splunk Cloud Admin account with credentials on email.  
 
 <img src="screenshots/splunk_cloud.png" width="600">  
 
