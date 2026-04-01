@@ -25,7 +25,7 @@ To ensure both Kali and Windows VM were on the same subnet, I switched the Netwo
 <img src="screenshots/connectivity_windows.png" width="600">
 <img src="screenshots/connectivity_kali.png" width="600">
 
-**Step 1.3: SIEM Provisioning -**  
+**Step 1.3: Splunk Cloud SIEM Provisioning -**  
 <here>  
 
 <img src="screenshots/splunk_cloud.png" width="600">
