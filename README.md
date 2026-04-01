@@ -20,7 +20,7 @@ To ensure both Kali and Windows VM were on the same subnet, I switched the Netwo
 <img src="screenshots/windows_ipconfig.png" width="600">
 
 **Step 1.2: Connectivity & ICMP Handshake -**  
-<here>  
+By default, Windows 11 ARM blocks pings. So had to open a specific hole in firewall using command `New-NetFirewallRule -DisplayName "Allow ICMPv4-In" -Direction Inbound -Protocol ICMPv4 -IcmpType 8 -Action Allow` to allow Kali VM to see Windows VM, which was later verified by running `ping 172.16.36.130 -c 4`
 
 <img src="screenshots/connectivity_windows.png" width="600">
 <img src="screenshots/connectivity_kali.png" width="600">
