@@ -59,21 +59,21 @@ And then downloaded SwiftOnSecurity's config `https://github.com/SwiftOnSecurity
 
 <img src="screenshots/swiftonsecurity_config.png" width="600">  
 
-Expanded the downloaded sysmon zip file in a new directory and ran `.\Sysmon64.exe -i ..\sysmonconfig-export.xml -accepteula` to configure Sysmon with the downloaded configuration file.  
+Expanded the downloaded Sysmon zip file in a new directory and ran `.\Sysmon64.exe -i ..\sysmonconfig-export.xml -accepteula` to configure Sysmon with the downloaded configuration file.  
 
 <img src="screenshots/running_sysmon_with_config.png" width="600">
 
 **Step 2.2: Tell Universal Forwarder to "Listen" -**  
-Now  
+Now that Sysmon is recording data, I opened Notepad as Administrator and created `inputs.conf` file so that it can pick up the data from Splunk Universal Forwarder and send it to Splunk Cloud.  
 
 <img src="screenshots/inputs.conf_file.png" width="600">  
 
-input  
+After copying `inputs.conf` file to `C:\Program Files\SplunkUniversalForwarder\etc\system\local`. I restarted the Splunk Service.  
 
 <img src="screenshots/restarting_uf.png" width="600">
 
 **Step 2.3: -**  
-input  
+Verified the visibility of logs by using filter `index="main" | stats count by sourcetype` in Search & Reporting of Splunk Cloud.  
 
 <img src="screenshots/endpoint_visibility_splunk_cloud.png" width="600">  
 
