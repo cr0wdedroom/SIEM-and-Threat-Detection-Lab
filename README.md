@@ -50,7 +50,7 @@ Phase 2: Data Ingestion & Endpoint Visibility
 ---
 Focused on the deployment of advanced endpoint telemetry by installing Sysmon on Windows VM and the configuration of the data ingestion pipeline to achieve deep visibility into system-level activity.  
 
-**Step 2.1: Sysmon Installation -**  
+**Step 2.1: Install Sysmon -**  
 Sysmon (System Monitor) is a Microsoft tool that provides deep-level telemetry (Process Creation, File Creation time changes, Network Connection). I downloaded it from Microsoft Sysinternals website `https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon`.  
 
 <img src="screenshots/sysmon_download.png" width="600">  
@@ -59,3 +59,9 @@ And then downloaded SwiftOnSecurity's config `https://github.com/SwiftOnSecurity
 
 <img src="screenshots/swiftonsecurity_config.png" width="600">  
 
+Finally ran `.\Sysmon64.exe -i sysmonconfig-export.xml -accepteula` to configure Sysmon with the downloaded configuration file.  
+
+<img src="screenshots/running_sysmon_with_config" width="600">
+
+**Step 2.2: Tell Universal Forwarder to "Listen" -**  
+input
