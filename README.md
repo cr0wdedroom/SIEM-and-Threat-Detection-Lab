@@ -61,7 +61,7 @@ And then downloaded SwiftOnSecurity's config `https://github.com/SwiftOnSecurity
 
 Finally ran `.\Sysmon64.exe -i sysmonconfig-export.xml -accepteula` to configure Sysmon with the downloaded configuration file.  
 
-<img src="screenshots/running_sysmon_with_config" width="600">
+<img src="screenshots/running_sysmon_with_config.png" width="600">
 
 **Step 2.2: Tell Universal Forwarder to "Listen" -**  
 input
