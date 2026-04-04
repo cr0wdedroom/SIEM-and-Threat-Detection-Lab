@@ -59,7 +59,7 @@ And then downloaded SwiftOnSecurity's config `https://github.com/SwiftOnSecurity
 
 <img src="screenshots/swiftonsecurity_config.png" width="600">  
 
-Finally ran `.\Sysmon64.exe -i sysmonconfig-export.xml -accepteula` to configure Sysmon with the downloaded configuration file.  
+Expanded downloaded sysmon zip file in a new directory and ran `.\Sysmon64.exe -i ..\sysmonconfig-export.xml -accepteula` to configure Sysmon with the downloaded configuration file.  
 
 <img src="screenshots/running_sysmon_with_config.png" width="600">
 
