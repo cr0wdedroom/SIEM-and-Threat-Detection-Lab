@@ -48,4 +48,7 @@ Opened Powershell as Administrator in Windows and ran command `cd C:\Program Fil
 ---
 Phase 2: Data Ingestion & Endpoint Visibility  
 ---
+Installed Sysmon on Windows and made a custom configuration file that connects back to Splunk Cloud with the help of credentials.  
 
+**Step 2.1: Sysmon Installation -**  
+input
