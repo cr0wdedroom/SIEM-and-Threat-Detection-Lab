@@ -65,3 +65,17 @@ Expanded downloaded sysmon zip file in a new directory and ran `.\Sysmon64.exe -
 
 **Step 2.2: Tell Universal Forwarder to "Listen" -**  
 input
+<img src="screenshots/inputs.conf_file.png" width="600">  
+
+
+<img src="screenshots/restarting_uf.png" width="600">
+
+**Step 2.3: -**  
+
+
+<img src="screenshots/endpoint_visibility_splunk_cloud.png" width="600">  
+
+---
+Phase 3:
+---
+
