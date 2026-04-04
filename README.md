@@ -83,5 +83,34 @@ Phase 3: Detection Engineering & Data Visualization
 Transformed raw telemetry from the Windows Endpoint into actionable security intelligence by creating specific Detection Logic (Alerts) and High-Level Visibility (Dashboards).  
 
 **Step 3.1: -**
+input  
+
+<img src="screenshots/alert1.png" width="600">  
+
+input  
+
+<img src="screenshots/alert1_saveas_1.png" width="600">  
+<img src="screenshots/alert1_saveas_2.png" width="600">  
+
+input  
+
+<img src="screenshots/alert2.png" width="600">  
+
+input  
+
+<img src="screenshots/alert3.png" width="600">  
+
+input  
+
+<img src="screenshots/alert4.png" width="600">  
+
+input  
+
+<img src="screenshots/alert5.png" width="600">  
+
+input  
+
+<img src="screenshots/all_alerts.png" width="600">  
+
 
 
