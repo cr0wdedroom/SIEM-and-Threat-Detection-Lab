@@ -63,7 +63,7 @@ Expanded the downloaded Sysmon zip file in a new directory and ran `.\Sysmon64.e
 
 <img src="screenshots/running_sysmon_with_config.png" width="600">
 
-**Step 2.2: Tell Universal Forwarder to "Listen" -**  
+**Step 2.2: Data Pipeline Configuration -**  
 Now that Sysmon is recording data, I opened Notepad as Administrator and created `inputs.conf` file so that it can pick up the data from Splunk Universal Forwarder and send it to Splunk Cloud.  
 
 <img src="screenshots/inputs.conf_file.png" width="600">  
@@ -72,12 +72,16 @@ After copying `inputs.conf` file to `C:\Program Files\SplunkUniversalForwarder\e
 
 <img src="screenshots/restarting_uf.png" width="600">
 
-**Step 2.3: -**  
+**Step 2.3: - Visibility Verification**  
 Verified the visibility of logs by using filter `index="main" | stats count by sourcetype` in Search & Reporting of Splunk Cloud.  
 
 <img src="screenshots/endpoint_visibility_splunk_cloud.png" width="600">  
 
 ---
-Phase 3:
+Phase 3: Detection Engineering & Data Visualization  
 ---
+Transformed raw telemetry from the Windows Endpoint into actionable security intelligence by creating specific Detection Logic (Alerts) and High-Level Visibility (Dashboards).  
+
+**Step 3.1: -**
+
 
