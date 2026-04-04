@@ -51,4 +51,4 @@ Phase 2: Data Ingestion & Endpoint Visibility
 Installed Sysmon on Windows and made a custom configuration file that connects back to Splunk Cloud with the help of credentials.  
 
 **Step 2.1: Sysmon Installation -**  
-input
+Sysmon is essential for entry of logs so I installed it from Microsoft's Sysinternals. Along with configuration file from github
