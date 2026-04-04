@@ -1,0 +1,29 @@
+Alert 1 - 
+index="main" sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=3 
+| stats dc(DestPort) as unique_ports count by src_ip 
+| where unique_ports > 30
+
+
+Alert 2 - 
+index="main" sourcetype="WinEventLog:Security" EventCode=4625 
+| stats count by TargetUserName, src_ip 
+| where count > 10
+
+
+Alert 3 - 
+index="main" sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1 Image="*schtasks.exe" 
+| table _time, host, User, CommandLine, ParentImage
+
+
+Alert 4 - 
+index="main" sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=10 TargetImage="*lsass.exe" 
+| where (GrantedAccess="0x1fffff" OR GrantedAccess="0x1010")
+| table _time, SourceImage, TargetImage, GrantedAccess, host
+
+
+Alert 5 - 
+index="main" sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1 (Image="*powershell.exe" OR Image="*pwsh.exe") (CommandLine="*-enc*" OR CommandLine="*-encodedcommand*" OR CommandLine="*bypass*" OR CommandLine="*-w hidden*")
+| table _time, User, host, CommandLine, ParentImage
+
+
+
