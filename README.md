@@ -59,19 +59,21 @@ And then downloaded SwiftOnSecurity's config `https://github.com/SwiftOnSecurity
 
 <img src="screenshots/swiftonsecurity_config.png" width="600">  
 
-Expanded downloaded sysmon zip file in a new directory and ran `.\Sysmon64.exe -i ..\sysmonconfig-export.xml -accepteula` to configure Sysmon with the downloaded configuration file.  
+Expanded the downloaded sysmon zip file in a new directory and ran `.\Sysmon64.exe -i ..\sysmonconfig-export.xml -accepteula` to configure Sysmon with the downloaded configuration file.  
 
 <img src="screenshots/running_sysmon_with_config.png" width="600">
 
 **Step 2.2: Tell Universal Forwarder to "Listen" -**  
-input
+Now  
+
 <img src="screenshots/inputs.conf_file.png" width="600">  
 
+input  
 
 <img src="screenshots/restarting_uf.png" width="600">
 
 **Step 2.3: -**  
-
+input  
 
 <img src="screenshots/endpoint_visibility_splunk_cloud.png" width="600">  
 
