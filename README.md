@@ -48,7 +48,14 @@ Opened Powershell as Administrator in Windows and ran command `cd C:\Program Fil
 ---
 Phase 2: Data Ingestion & Endpoint Visibility  
 ---
-Installed Sysmon on Windows and made a custom configuration file that connects back to Splunk Cloud with the help of credentials.  
+Focused on the deployment of advanced endpoint telemetry by installing Sysmon on Windows VM and the configuration of the data ingestion pipeline to achieve deep visibility into system-level activity.  
 
 **Step 2.1: Sysmon Installation -**  
-Sysmon is essential for entry of logs so I installed it from Microsoft's Sysinternals. Along with configuration file from github
+Sysmon (System Monitor) is a Microsoft tool that provides deep-level telemetry (Process Creation, File Creation time changes, Network Connection). I downloaded it from Microsoft Sysinternals website `https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon`.  
+
+<img src="screenshots/sysmon_download.png" width="600">  
+
+And then downloaded SwiftOnSecurity's config `https://github.com/SwiftOnSecurity/sysmon-config/blob/master/sysmonconfig-export.xml` as filter so I don't overwhelm my Windows VM.  
+
+<img src="screenshots/swiftonsecurity_config.png" width="600">  
+
