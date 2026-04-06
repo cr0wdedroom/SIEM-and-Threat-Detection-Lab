@@ -142,6 +142,6 @@ input
 <img src="screenshots/final_dashboard.png" width="600">  
 
 ---
-Phase 4: The Attack Simulation  
+Phase 4: Attack Simulation  
 ---
 
