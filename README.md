@@ -112,7 +112,7 @@ Transformed raw telemetry from the Windows Endpoint into actionable security int
 
 <img src="screenshots/all_alerts.png" width="600">  
 
-**Step 3.2: -**  
+**Step 3.2: Visualization Design and Dashboard Layout -**  
 .  
 
 <img src="screenshots/create_dashboard.png" width="600">  
