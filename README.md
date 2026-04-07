@@ -96,7 +96,7 @@ Transformed raw telemetry from the Windows Endpoint into actionable security int
 
 <img src="screenshots/alert2.png" width="600">  
 
-.  
+Alert 3 - Persistence via Scheduled Tasks [T1053.005](https://attack.mitre.org/techniques/T1053/005/)  
 
 <img src="screenshots/alert3.png" width="600">  
 
