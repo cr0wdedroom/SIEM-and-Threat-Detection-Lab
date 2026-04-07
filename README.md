@@ -5,7 +5,7 @@ This lab demonstrates end-to-end proficiency in threat detection and SOC analyst
 1. Setting up a two-VM isolated network environment (Kali Linux and Windows 11 ARM) with Sysmon capturing deep host telemetry across all critical event categories.  
 2. Configuring Splunk Cloud to ingest Windows log sources and deploying custom correlation rules mapped to the MITRE ATT&CK framework.  
 3. Simulating targeted attack chains (e.g., Active Scanning, Brute Force, Credential Dumping, Persistence via Scheduled Tasks and PowerShell Execution) to generate real security alerts.  
-4. Performing SOC triage by analyzing Splunk detections against raw Sysmon and Windows Event Log evidence, confirming True Positives and documenting findings in a formal Incident Report.
+4. Performing SOC triage by analyzing Splunk detections against raw Sysmon and Windows Event Log evidence, confirming True Positives and visualizing on Splunk Dashboard.
 
 
 ---
