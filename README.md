@@ -83,74 +83,102 @@ Phase 3: Detection Engineering & Data Visualization
 Transformed raw telemetry from the Windows Endpoint into actionable security intelligence by creating specific Detection Logic (Alerts) and High-Level Visibility (Dashboards).  
 
 **Step 3.1: -**  
-input  
+.  
 
 <img src="screenshots/alert1.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/alert1_saveas_1.png" width="600">  
 <img src="screenshots/alert1_saveas_2.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/alert2.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/alert3.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/alert4.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/alert5.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/all_alerts.png" width="600">  
 
 **Step 3.2: -**  
-input  
+.  
 
 <img src="screenshots/create_dashboard.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/v1_chart.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/v1_source.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/v1_coloring.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/v2_source.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/v3_source.png" width="600">  
 
-input  
+.  
 
 <img src="screenshots/final_dashboard.png" width="600">  
 
 ---
 Phase 4: Attack Simulation  
 ---
-input  
+.  
 
 **Step 4.1: -**  
-input  
+.  
 
 <img src="screenshots/nmap_command.png" width="600">  
 
-input  
+.  
 
+<img src="screenshots/nmap_evtx.png" width="600">  
 
+.  
+
+<img src="screenshots/hydra_command.png" width="600">  
+
+.  
+
+<img src="screenshots/hydra_evtx.png" width="600">  
+
+.  
+
+<img src="screenshots/schtasks&powershell_commands.png" width="600">  
+
+.  
+
+<img src="screenshots/schtasks_evtx.png" width="600">  
+
+.  
+
+<img src="screenshots/lsass_command.png" width="600">  
+
+.  
+
+<img src="screenshots/lsass_evtx.png" width="600">  
+
+.  
+
+<img src="screenshots/ultimate_dashboard.png" width="600">
