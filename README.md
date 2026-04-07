@@ -72,7 +72,7 @@ After copying `inputs.conf` file to `C:\Program Files\SplunkUniversalForwarder\e
 
 <img src="screenshots/restarting_uf.png" width="600">
 
-**Step 2.3: - Visibility Verification**  
+**Step 2.3: Visibility Verification -**  
 Verified the visibility of logs by using filter `index="main" | stats count by sourcetype` in Search & Reporting of Splunk Cloud.  
 
 <img src="screenshots/endpoint_visibility_splunk_cloud.png" width="600">  
@@ -82,7 +82,7 @@ Phase 3: Detection Engineering & Data Visualization
 ---
 Transformed raw telemetry from the Windows Endpoint into actionable security intelligence by creating specific Detection Logic (Alerts) and High-Level Visibility (Dashboards).  
 
-**Step 3.1: -**  
+**Step 3.1: Alert Logic Development -**  
 .  
 
 <img src="screenshots/alert1.png" width="600">  
@@ -146,7 +146,7 @@ Phase 4: Attack Simulation
 ---
 .  
 
-**Step 4.1: -**  
+**Step 4.1: Adversary Simulation & Event Log Correlation -**  
 .  
 
 <img src="screenshots/nmap_command.png" width="600">  
@@ -179,6 +179,7 @@ Phase 4: Attack Simulation
 
 <img src="screenshots/lsass_evtx.png" width="600">  
 
+**Step 4.2: SIEM Dashboard Visualization -**  
 .  
 
 <img src="screenshots/ultimate_dashboard.png" width="600">
