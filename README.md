@@ -144,4 +144,13 @@ input
 ---
 Phase 4: Attack Simulation  
 ---
+input  
+
+**Step 4.1: -**  
+input  
+
+<img src="screenshots/nmap_command.png" width="600">  
+
+input  
+
 
