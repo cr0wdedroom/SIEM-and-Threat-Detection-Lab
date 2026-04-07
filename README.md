@@ -180,6 +180,6 @@ Phase 4: Attack Simulation
 <img src="screenshots/lsass_evtx.png" width="600">  
 
 **Step 4.2: SIEM Dashboard Visualization -**  
-I had to make some changes so the final dashboard displays the `full_log_entry` and the correct `attack_type`. It successfully correlates disparate log sources into a single pane of glass. By identifying high-criticality events such as Credential Dumping and Brute Force attempts in real-time, the SIEM provides the necessary telemetry for rapid incident response.  
+I had to make some changes so the final dashboard displays the `Full_Log_Entry` and the correct `Attack_Type`. It successfully correlates disparate log sources into a single pane of glass. By identifying high-criticality events such as Credential Dumping and Brute Force attempts in real-time, the SIEM provides the necessary telemetry for rapid incident response.  
 
 <img src="screenshots/ultimate_dashboard.png" width="600">
