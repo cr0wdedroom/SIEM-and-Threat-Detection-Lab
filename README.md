@@ -83,7 +83,7 @@ Phase 3: Detection Engineering & Data Visualization
 Transformed raw telemetry from the Windows Endpoint into actionable security intelligence by creating specific Detection Logic (Alerts) and High-Level Visibility (Dashboards).  
 
 **Step 3.1: Alert Logic Development -**  
-.  
+Alert 1 - Active Scanning (Nmap Scan Detected) [T1595](https://attack.mitre.org/techniques/T1595/)  
 
 <img src="screenshots/alert1.png" width="600">  
 
@@ -92,7 +92,7 @@ Transformed raw telemetry from the Windows Endpoint into actionable security int
 <img src="screenshots/alert1_saveas_1.png" width="600">  
 <img src="screenshots/alert1_saveas_2.png" width="600">  
 
-.  
+Alert 2 - Brute Force Detected [T1110](https://attack.mitre.org/techniques/T1110/)  
 
 <img src="screenshots/alert2.png" width="600">  
 
@@ -100,11 +100,11 @@ Alert 3 - Persistence via Scheduled Tasks [T1053.005](https://attack.mitre.org/t
 
 <img src="screenshots/alert3.png" width="600">  
 
-.  
+Alert 4 - OS Credential Dumping: LSASS Memory Detected [T1003.001](https://attack.mitre.org/techniques/T1003/001/)  
 
 <img src="screenshots/alert4.png" width="600">  
 
-.  
+Alert 5 - Command and Scripting Interpreter: PowerShell Detected [T1059.001](https://attack.mitre.org/techniques/T1059/001/)  
 
 <img src="screenshots/alert5.png" width="600">  
 
