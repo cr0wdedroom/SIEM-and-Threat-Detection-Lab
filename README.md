@@ -147,7 +147,7 @@ Phase 4: Attack Simulation
 .  
 
 **Step 4.1: Adversary Simulation & Event Log Correlation -**  
-Performed Nmap scan using command `nmap -A -T5 172.16.36.130` on Kali Linux and validated it by filtering for EventCode `4688` in `Event Viewer > Windows Logs > Security`. 
+Performed Nmap scan using command `nmap -A -T5 172.16.36.130` on Kali Linux and validated it by filtering for EventCode `5156` which shows `Source Address: 172.16.36.131` and `Destination Address: 172.16.36.130` in `Event Viewer > Windows Logs > Security`. 
 
 <img src="screenshots/nmap_command.png" width="600">    
 
