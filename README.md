@@ -84,6 +84,8 @@ Transformed raw telemetry from the Windows Endpoint into actionable security int
 
 **Step 3.1: Alert Logic Development -**  
 Alert 1 - Active Scanning (Nmap Scan Detected) [T1595](https://attack.mitre.org/techniques/T1595/)  
+Scenario - Before an attacker exploits a system, they use `nmap` from Kali to see which ports (services) are open. This creates a massive burst of network connection attempts in our logs.  
+I saved the following SPL query to look for `EventCode=3` and filter by `src_ip` where `unique_ports > 30`.  
 
 <img src="screenshots/alert1.png" width="600">  
 
