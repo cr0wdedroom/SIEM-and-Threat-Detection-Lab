@@ -95,6 +95,8 @@ I saved the following SPL query to look for `EventCode=3` and filter by `src_ip`
 <img src="screenshots/alert1_saveas_2.png" width="600">  
 
 Alert 2 - Brute Force Detected [T1110](https://attack.mitre.org/techniques/T1110/)  
+Scenario - The attacker targets the open RDP port and initiates a password-spraying attack using the Hydra tool. This automated process attempts to gain unauthorized access by testing thousands of credential combinations against the Administrator account in a short window.  
+I saved the following SPL query to look for `EventCode=4625` in Security Logs and filter by `TargetUserName` and `src_ip` where `count > 10`.  
 
 <img src="screenshots/alert2.png" width="600">  
 
