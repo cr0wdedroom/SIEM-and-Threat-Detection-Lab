@@ -123,31 +123,31 @@ Here is a list of all them alerts I created that will trigger on the dashboard's
 <img src="screenshots/all_alerts.png" width="600">  
 
 **Step 3.2: Visualization Design and Dashboard Layout -**  
-.  
+Created a dashboard with title `SOC Threat Monitoring` with Absolute (Full Layout Control).  
 
 <img src="screenshots/create_dashboard.png" width="600">  
 
-.  
+Selected Single Value chart from the chart drop-down menu.  
 
 <img src="screenshots/v1_chart.png" width="600">  
 
-.  
+Custom SPL Query for this chart to show count of alerts with `EventCode=4625 OR EventCode=3`  
 
 <img src="screenshots/v1_source.png" width="600">  
 
-.  
+Made coloring changes so that it shows numbers in red if alerts are 1 or greater than 1, green if they are 0.  
 
 <img src="screenshots/v1_coloring.png" width="600">  
 
-.  
+2nd Chart showing a timechart of events with `EventCode=1 OR EventCode=3 OR EventCode=4625`  
 
 <img src="screenshots/v2_source.png" width="600">  
 
-.  
+Finally, 3rd one is a table to show `_time`, the `Attack_Type` that was performed along with `CommandLine`.  
 
 <img src="screenshots/v3_source.png" width="600">  
 
-.  
+Adjusted the charts and table to look like a proper dashboard for SOC Analyst to visualize.  
 
 <img src="screenshots/final_dashboard.png" width="600">  
 
