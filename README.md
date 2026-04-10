@@ -105,11 +105,13 @@ Alert 3 - Persistence via Scheduled Tasks [T1053.005](https://attack.mitre.org/t
 <img src="screenshots/alert3.png" width="600">  
 
 Alert 4 - OS Credential Dumping: LSASS Memory Detected [T1003.001](https://attack.mitre.org/techniques/T1003/001/)  
+Scenario - Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS).  
+I saved the following SPL query that looks for `EventCode=10` and `TargetImage=*lsass.exe*`.  
 
 <img src="screenshots/alert4.png" width="600">  
 
 Alert 5 - Command and Scripting Interpreter: PowerShell Detected [T1059.001](https://attack.mitre.org/techniques/T1059/001/)  
-Scenario - Adversaries may abuse PowerShell commands and scripts for execution.
+Scenario - Adversaries may abuse PowerShell commands and scripts for execution.  
 I saved the following SPL query that looks for `EventCode=1` and for images like `powershell.exe` and `pwsh.exe` and command line filters like `-encodedcommand`, `bypass` and `-w hidden`.  
 
 <img src="screenshots/alert5.png" width="600">  
