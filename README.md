@@ -131,7 +131,7 @@ Selected Single Value chart from the chart drop-down menu.
 
 <img src="screenshots/v1_chart.png" width="600">  
 
-Custom SPL Query for this chart to show count of alerts with `EventCode=4625 OR EventCode=3`  
+Custom SPL Query for this chart to show count of alerts with `EventCode=4625 OR EventCode=3`.  
 
 <img src="screenshots/v1_source.png" width="600">  
 
@@ -139,7 +139,7 @@ Made coloring changes so that it shows numbers in red if alerts are 1 or greater
 
 <img src="screenshots/v1_coloring.png" width="600">  
 
-2nd Chart showing a timechart of events with `EventCode=1 OR EventCode=3 OR EventCode=4625`  
+2nd Chart showing a timechart of events with `EventCode=1 OR EventCode=3 OR EventCode=4625`.  
 
 <img src="screenshots/v2_source.png" width="600">  
 
@@ -154,36 +154,29 @@ Adjusted the charts and table to look like a proper dashboard for SOC Analyst to
 ---
 Phase 4: Attack Simulation  
 ---
-.  
+After executing the attack scripts, the Sysmon EDR telemetry failed to populate in real-time within the Splunk dashboard. To maintain the forensic integrity of the simulation, I pivoted to the Windows Event Viewer to manually verify the raw security logs and confirm the generation of the expected Event IDs.  
 
 **Step 4.1: Adversary Simulation & Event Log Correlation -**  
-Performed Nmap scan using command `nmap -A -T5 172.16.36.130` on Kali Linux and validated it by filtering for EventCode `5156` which shows `Source Address: 172.16.36.131` and `Destination Address: 172.16.36.130` in `Event Viewer > Windows Logs > Security`. 
+Performed Nmap scan using command `nmap -A -T5 172.16.36.130` on Kali Linux and validated it by filtering for EventID `5156` which shows `Source Address: 172.16.36.131` and `Destination Address: 172.16.36.130` in `Event Viewer > Windows Logs > Security`. 
 
-<img src="screenshots/nmap_command.png" width="600">    
+<img src="screenshots/nmap_command.png" width="600">  
 
 <img src="screenshots/nmap_evtx.png" width="600">  
 
-.  
+Performed Brute Force Attack on Windows using `hydra` tool for `cr0wdedroom` on RDP Service and validated it by filtering for EventID `4625` (failed login), which shows `AccountName: cr0wdedroom` and `Failure Reason: Unknown user name or bad password`.   
 
 <img src="screenshots/hydra_command.png" width="600">  
-
-.  
 
 <img src="screenshots/hydra_evtx.png" width="600">  
 
 .  
 
 <img src="screenshots/schtasks&powershell_commands.png" width="600">  
-
-.  
-
 <img src="screenshots/schtasks_evtx.png" width="600">  
 
 .  
 
-<img src="screenshots/lsass_command.png" width="600">  
-
-.  
+<img src="screenshots/lsass_command.png" width="600">    
 
 <img src="screenshots/lsass_evtx.png" width="600">  
 
