@@ -80,7 +80,7 @@ Verified the visibility of logs by using filter `index="main" | stats count by s
 ---
 Phase 3: Detection Engineering & Data Visualization  
 ---
-Transformed raw telemetry from the Windows Endpoint into actionable security intelligence by creating specific Detection Logic (Alerts) and High-Level Visibility (Dashboards).  
+Transformed raw telemetry from the Windows Endpoint into actionable security intelligence by creating specific Detection Logic (Alerts) and High-Level Visibility (Dashboard).  
 
 **Step 3.1: Alert Logic Development -**  
 Alert 1 - Active Scanning (Nmap Scan Detected) [T1595](https://attack.mitre.org/techniques/T1595/)  
@@ -89,7 +89,7 @@ I saved the following SPL query to look for `EventCode=3` and filter by `src_ip`
 
 <img src="screenshots/alert1.png" width="600">  
 
-.  
+In the Edit Alert Window, I changed it to run on cron schedule with time range of 60 seconds and trigger alerts when number of results is greater than 0, whilst using `src_ip` to suppress results and giving the triggered alerts a severity of High. I did the same with the other results, only Brute Force one was given Critical severity as the account was compromised.
 
 <img src="screenshots/alert1_saveas_1.png" width="600">  
 <img src="screenshots/alert1_saveas_2.png" width="600">  
@@ -118,7 +118,7 @@ I saved the following SPL query that looks for `EventCode=1` and for images like
 
 <img src="screenshots/alert5.png" width="600">  
 
-.  
+Here is a list of all them alerts I created that will trigger on the dashboard's charts.  
 
 <img src="screenshots/all_alerts.png" width="600">  
 
