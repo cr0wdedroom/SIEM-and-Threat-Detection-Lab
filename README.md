@@ -109,6 +109,8 @@ Alert 4 - OS Credential Dumping: LSASS Memory Detected [T1003.001](https://attac
 <img src="screenshots/alert4.png" width="600">  
 
 Alert 5 - Command and Scripting Interpreter: PowerShell Detected [T1059.001](https://attack.mitre.org/techniques/T1059/001/)  
+Scenario - Adversaries may abuse PowerShell commands and scripts for execution.
+I saved the following SPL query that looks for `EventCode=1` and for images like `powershell.exe` and `pwsh.exe` and command line filters like `-encodedcommand`, `bypass` and `-w hidden`.  
 
 <img src="screenshots/alert5.png" width="600">  
 
