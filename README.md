@@ -84,7 +84,7 @@ Transformed raw telemetry from the Windows Endpoint into actionable security int
 
 **Step 3.1: Alert Logic Development -**  
 Alert 1 - Active Scanning (Nmap Scan Detected) [T1595](https://attack.mitre.org/techniques/T1595/)  
-Scenario - Before an attacker exploits a system, they use `nmap` from Kali to see which ports (services) are open. This creates a massive burst of network connection attempts in our logs.  
+Scenario - Adversaries may execute active reconnaissance scans to gather information that can be used during targeting.  
 I saved the following SPL query to look for `EventCode=3` and filter by `src_ip` where `unique_ports > 30`.  
 
 <img src="screenshots/alert1.png" width="600">  
@@ -95,18 +95,20 @@ I saved the following SPL query to look for `EventCode=3` and filter by `src_ip`
 <img src="screenshots/alert1_saveas_2.png" width="600">  
 
 Alert 2 - Brute Force Detected [T1110](https://attack.mitre.org/techniques/T1110/)  
-Scenario - The attacker targets the open RDP port and initiates a password-spraying attack using the Hydra tool. This automated process attempts to gain unauthorized access by testing thousands of credential combinations against the Administrator account in a short window.  
+Scenario - Adversaries may use brute force techniques to gain access to accounts when passwords are unknown or when password hashes are obtained.  
 I saved the following SPL query to look for `EventCode=4625` in Security Logs and filter by `TargetUserName` and `src_ip` where `count > 10`.  
 
 <img src="screenshots/alert2.png" width="600">  
 
 Alert 3 - Persistence via Scheduled Tasks [T1053.005](https://attack.mitre.org/techniques/T1053/005/)  
+Scenario - Adversaries may abuse the Windows Task Scheduler to perform task scheduling for initial or recurring execution of malicious code.  
+I saved the following SPL query that looks for `EventCode=1` and `Image="*schtasks.exe"`.
 
 <img src="screenshots/alert3.png" width="600">  
 
 Alert 4 - OS Credential Dumping: LSASS Memory Detected [T1003.001](https://attack.mitre.org/techniques/T1003/001/)  
 Scenario - Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS).  
-I saved the following SPL query that looks for `EventCode=10` and `TargetImage=*lsass.exe*`.  
+I saved the following SPL query that looks for `EventCode=10` and `TargetImage="*lsass.exe"`.  
 
 <img src="screenshots/alert4.png" width="600">  
 
