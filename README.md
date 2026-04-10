@@ -163,20 +163,21 @@ Performed Nmap scan using command `nmap -A -T5 172.16.36.130` on Kali Linux and 
 
 <img src="screenshots/nmap_evtx.png" width="600">  
 
-Performed Brute Force Attack on Windows using `hydra` tool for `cr0wdedroom` on RDP Service and validated it by filtering for EventID `4625` (failed login), which shows `AccountName: cr0wdedroom` and `Failure Reason: Unknown user name or bad password`.   
+Performed Brute Force Attack on Windows using `hydra` tool for username `cr0wdedroom` on RDP Service and validated it by filtering for EventID `4625` (failed login), which shows `AccountName: cr0wdedroom` and `Failure Reason: Unknown user name or bad password`.   
 
 <img src="screenshots/hydra_command.png" width="600">  
 
 <img src="screenshots/hydra_evtx.png" width="600">  
 
-.  
+Executed `schtasks` to create a BackdoorTask for `calc.exe` and performed `powershell` execution of a random length word with `-EncodedCommand`. Validated them by searching for EventId `4688` (process creation) which showed a new process was created.  
 
 <img src="screenshots/schtasks&powershell_commands.png" width="600">  
+
 <img src="screenshots/schtasks_evtx.png" width="600">  
 
-.  
+Executed below command to create a memory dump of the `LSASS` process, which contains active user credentials and hashes, allowing to steal passwords for lateral movement. Now this was obviously blocked by Windows Defender, but it was logged just like the pervious commands and I validated this by searching for EventID `1117`.  
 
-<img src="screenshots/lsass_command.png" width="600">    
+<img src="screenshots/lsass_command.png" width="600">  
 
 <img src="screenshots/lsass_evtx.png" width="600">  
 
